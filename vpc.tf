@@ -17,6 +17,8 @@ module "vpc" {
     cidrsubnet(var.cidr, 8, 2),
     cidrsubnet(var.cidr, 8, 3),
   ]
-
-  tags = var.tags
+  
+  tags = merge(var.tags, {
+    Project = "tdc-2020"
+  })
 }
