@@ -8,12 +8,12 @@ terraform {
     }
   }
 
-    backend "remote" {
-      hostname     = "app.terraform.io"
-      organization = "dednets"
+  backend "remote" {
+    hostname     = "app.terraform.io"
+    organization = "dednets"
 
-      workspaces {
-        prefix = "aws-network-"
-      }
+    workspaces {
+      prefix = "aws-network-"
     }
+  }
 }
