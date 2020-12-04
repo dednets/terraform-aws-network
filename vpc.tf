@@ -19,6 +19,6 @@ module "vpc" {
   ]
   
   tags = merge(var.tags, {
-    Project = "tdc-2020"
+    Project = "tdc-poa-2020"
   })
 }
