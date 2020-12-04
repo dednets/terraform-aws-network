@@ -1,9 +1,3 @@
-variable "terraform_version" {
-  type        = string
-  description = "The version of the Terraform CLI"
-  default     = "0.13.5"
-}
-
 variable "vpc_name" {
   description = "The VPC name. Also used to set subnet names prefix"
   type        = string
